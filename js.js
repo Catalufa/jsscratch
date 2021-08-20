@@ -19,7 +19,7 @@ class Utilities {
         {
           opcode: 'fetchFrom',
 
-          blockType: Scratch.BlockType.REPORTER,
+          blockType: Scratch.BlockType.HAT,
 
           text: 'run [CODE] as javascript',
           arguments: {
@@ -34,7 +34,7 @@ class Utilities {
   }
 
   fetchFrom({CODE}) {
-    return eval(CODE).then(res => res.text())
+    return top.eval(CODE)
       .catch(err => '');
   }
 }
