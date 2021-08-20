@@ -19,7 +19,7 @@ class Utilities {
         {
           opcode: 'fetchFrom',
 
-          blockType: Scratch.BlockType.HAT,
+          blockType: Scratch.BlockType.STACK,
 
           text: 'run [CODE] as javascript',
           arguments: {
